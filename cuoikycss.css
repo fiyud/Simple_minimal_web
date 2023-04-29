@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* lay font tu google font ma ko can tai ve*/
+:root{
+/* maucuaweb */
+    --first color: #0e2431; /* -- dung cho var*/
+    --second-color: #6a59d1;
+    --third-color: #777;
+/* mau hover */
+    --hover-color: #614fd0;
+/* background color */
+    --body-bg-color: #fefefe;
+    --card-bg-color: #fff;
+    --modal-bg-color: #fff;
+    --bg-transparent-color: rgba(0, 0, 0, 0.1);
+    --transparent-color-01: rgba(0, 0, 0, 0.1);
+    --transparent-color-02: rgba(106, 89, 209, 0.1);
+    --line-color: #d7d7d7;
+/* filter */
+    --color-filter: invert(1);
+/* shadow */
+    --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+/* size font */
+    --small-font-size: 0.9em;
+    --normal-font-size: 1em;
+/*scroll bar*/
+    --scroll-bar-color: #c5cadf;
+    --scroll-thumb-number: #70768a;
+    --scroll-thumb-hover-color: #454f6b;
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: var(--first-color);
+    background: var(--body-bg-color);
+    margin: 2rem 0 0 0;
+    transition: .5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* thanh keo */
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--scroll-bar-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--scroll-thumb-number);
+    border-radius: 2em;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--scroll-thumb-hover-color);
+    
+}
+/* header */
+header{
+    z-index: 99999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    transform: .6s ease;
+}
+
+header.sticky{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: var(--box-shadow);
+}
+
+.thanhdieuhuong{
+    position: relative;
+    height: calc(4rem + 1rem);
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    transition: .6s ease;
+}
+
+header.sticky .thanhdieuhuong{
+    height: calc(2.5rem + 1rem);
+}
+.thanhdieuhuong .logo {
+    color: var(--first-color);
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.itemdh a{
+    color: var(--first-color);
+    font-weight: 500;
+    font-size: var(--normal-font-size);
+}
+.itemdh a:not(:last-child){
+    margin-right: 50px;
+}
+.itemdh a:hover{
+    color: var(--second-color);
+}
+
+.home{
+    position: relative;
+    max-width: 1250px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 2rem;
+    flex-direction: column;
+}
+
+.home .home-container{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+/* vi tri icon */
+.home-container .media-icons{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+/* chinh icon vi tri icon */
+.home-container .media-icons a{
+    color: var(--second-color);
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+/* .anh{
+    im
+} */
+.home-container .media-icons a:hover{
+    color: var(--hover-color);
+}
+/* cai dat cho h2 */
+.home-container .info h2{
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 70px;
+}
+
+.home-container .info h3{
+    color: var(--third-color);
+    font-feature-settings: 1.3em;  /* font feature dung de dieu chinh font chu*/
+    font-weight: 600;
+    line-height: 50px;
+}
+.home-container .info p{
+    color: var(--third-color);
+    font-size: var(--normal-font-size);
+    max-width: 350px;
+}
+/* tao hop quanh contact me */
+.btn {
+    background: var(--second-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background: var(--hover-color)
+}
+
+.home-container .home-img{
+    position: relative;
+}
+.home-container .home-img img{
+    width: 90;
+    transform: translate(0, 0);
+}
+
+.home .scroll-down{
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.home .scroll-down i{
+    color: var(--second-color);
+    font-size: 1.2em;
+    animation: arrow-down ease 1s infinite; /*infinite dung de animation lap di lap lai ko dung */
+}
+
+@keyframes arrow-down {
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(10px);
+    }
+}
+/* phan cua trang 2 */
+.section{
+    position: relative;
+    width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 6rem 2rem 2rem;
+}
+.sub-section{
+    position: relative;
+    width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 6rem 0;
+}
+.section-title-01{
+    font-size: 4.5em;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(to top, transparent 0%, #0e2431 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .1;
+}
+.section-title-02{
+    font-size: 2.5em;
+    font-weight: 700;
+    transform: translateY(-80px);
+}
+
+.section-title-02::before{
+    content: ' ';
+    position: absolute;
+    width: 70px;
+    height: 5px;
+    right: 0;
+    bottom: 0;
+    background: var(--second-color);
+}
+.container{
+    position: relative;
+    flex-direction: column;
+}
+/* section */
+.about .container .content {
+    column-gap: 40px;
+    width: 100%;
+}
+
+.about-img{
+    position: relative;
+}
+.about-img img{
+    max-width: 100%;
+    min-width: 500px;
+    border-radius: 10px;
+}
+.about-info .phanmota{
+    max-width: 600px;
+}
+.about-info .phanmota h3{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-info .phanmota h4{
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-info .phanmota h4 span{
+    color: var(--second-color);
+}
+.about-info .phanmota p{
+    color: var(--third-color);
+    font-size: var(--normal-font-size);
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--line-color);
+}
+.about-info .plist{
+    display: flex;
+    column-gap: 30px;
+}
+.about-info .plist .list-item h3{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.about-info .plist .list-item span{
+    color: var(--third-color);
+    font-size: var(--small-font-size);
+}
