@@ -1,32 +1,43 @@
-<!-- fas fa-arrow-down class lay tu trong thu vien-->
+<!-- "fas fa" class lay tu trong thu vien-->
+<!-- https://fontawesome.com/ -->
 <!DOCTYPE html>
 <html lang="vi" dir="ltr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ba`i cuo'i ky`</title>
+        <link rel="stylesheet" href="swiperbundle.min.css">
         <link rel="stylesheet" href="cuoikycss.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- thu vien online -->
+        <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" /> <!-- thu vien online -->
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
 <body>
-    
 
+<div class="scrollToTop-btn flex-center">
+    <i class="fas fa-arrow-up"></i>
+</div>
 
+<!-- dảkmode -->
+<div class="theme-btn flex-center">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+</div>
 
-    <header>
-        <div class="thanhdieuhuong">
-            <a href="#" class="logo"> Itisvnu </a>
-            <div class="dieuhuong">
-                <div class="itemdh">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#services">Services</a>
-                    <a href="#contact">Contact</a>
-                </div>
+<header>
+    <div class="thanhdieuhuong">
+        <a href="#" class="logo"> Itisvnu </a>
+        <div class="dieuhuong">
+            <div class="itemdh">
+                <a class="active" href="#home">Home</a> 
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Space</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
 <section class="home flex-center" id="home">
     <div class="home-container">
@@ -41,8 +52,9 @@
             <p>We do not simply cook but it is also sweat, enthusiasm from the heart from the chef for everyone.</p>
             <a href="" class="btn">Contact Us <i class="fas fa-arrow-circle-right"></i></a>
         </div>
-        <div class="home-img"></div>
-        <img src="logonmavjphon.png" alt="" class="anh">
+        <div class="home-img">
+        <img src="IMG/logonmavjphon.png" alt="" class="anh">
+    </div>
     </div>
     <a href="#about" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
 </section>
@@ -52,37 +64,557 @@
         <h2 class="section-title-02">About Us</h2>
         <div class="content flex-center">
             <div class="about-img">
-                <img src="logo+1cm.png" alt="">
+                <img src="IMG/chef.png" alt="">
             </div>
             <div class="about-info">
                 <div class="phanmota">
-                    <h3>Tự hào công thức gia truyền</h3>
-                    <h4>xxx<span>xxx</span>xxx<span>xxx</span>xxx</h4>
-                    <p>hahahahahahahahhahahahahaha</p>
+                    <h3>We're ITISVNU</h3>
+                    <h4>A <span>Professional</span> restaurant chain based in <span>Hoa Lac</span></h4>
+                    <p>We cook dishes according to our traditional recipes according to each region with an unique style. We are confident that our restaurant is a suitable destination for everyone, from young to old, meat eaters to vegetarians. Please click the download button below For more detailed information about the restaurant menu.</p>
                 </div>
                 <ul class="plist">
                     <li class="list-item">
-                        <h3>xxx</h3>
-                        <span>Nhà hàng nhiều sao<br>Nhà hàng nhiều sao</span>
+                        <h3>20+</h3>
+                        <span>Years of<br>experience</span>
                     </li>
                     <li class="list-item">
-                        <h3>xxx</h3>
-                        <span>Nhà hàng nhiều sao<br>Nhà hàng nhiều sao</span>
+                        <h3>100+</h3>
+                        <span>traditional<br>recipes</span>
                     </li>
                     <li class="list-item">
-                        <h3>xxx</h3>
-                        <span>Nhà hàng nhiều sao<br>Nhà hàng nhiều sao</span>
+                        <h3>50+</h3>
+                        <span>restaurants<br>around the world</span>
                     </li>
                 </ul>
-                <a href="" class="btn">Thành Phần <i class="fas fa-download"></i></a>
+                <a href="" class="btn">Our Menu <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- skill -->
+<section class="skills section" id="skills">
+    <div class="container flex-center"> <!--flex-center -->
+        <h1 class="section-title-01">Skills</h1>
+        <h2 class="section-title-02">Skills</h2>
+        <div class="content">
+            <div class="skills-description">
+                <h3>Training & Rating</h3>
+                <p>In 20 years of experience with 265 different 5-star Michelin dishes in the menu. We have won 30 awards in the categories of food, drinks and restaurant space</p> 
+            </div>
+            <!-- <div class="skills-info education-all">
+                <div class="education">
+                    <h4><label>fefejj</label></h4>
+                </div>
+            </div> -->
+            <div class="skills-info education-all">
+                <div class="education">
+                    <h4><label>Training Courses</label></h4>
+                    <ul class="edu-list">
+                        <li class="item">
+                            <span class="year">2018 - 2023</span>
+                            <p><span>Ph.D in Culinary Arts</span> - Swiss Education Group</p>
+                        </li>
+                        <li class="item">
+                            <span class="year">2021 - 2022</span>
+                            <p><span>Food Technology</span> - Ha Noi University of science and technology</p>
+                        </li>
+                        <li class="item">
+                            <span class="year">2020 - 2021</span>
+                            <p><span>Fried Rice Arts</span> - Havard University, Cambridge, CA</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h4><label>Rattings</label></h4>
+                    <ul class="bars">
+                        <li class="bar">
+                            <div class="info">
+                                <span>Decoration</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="line des"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>Space</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="line space"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>View</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="line view"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>Foods</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="line foods"></div>
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>Drinks</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line drinks"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h4><label>Awards</label></h4>
+                    <ul class="edu-list">
+                        <li class="item">
+                            <span class="year">2020</span>
+                            <p><span>Best Restaurant</span> - Vietnam Golden Knife Award 2020</p>
+                        </li>
+                        <li class="item">
+                            <span class="year">2009</span>
+                            <p><span>Excellent Award</span> - Gordon Ramsay Master Race Ltd.</p>
+                        </li>
+                        <li class="item">
+                            <span class="year">2018</span>
+                            <p><span>Best Overall Restaurant</span> - 2018 Restaurant & Bar Design Awards®</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+              
+        </div>
+    </div> 
+</section>
+
+<!-- trang tiep theo -->
+
+<section class="services section" id="services">
+    <div class="container flex-center">
+        <h1 class="section-title-01">Services</h1>
+        <h2 class="section-title-02">Services</h2>
+        <div class="content">
+            <div class="services-description">
+                <h3>How do we serve</h3>
+            </div>
+            <ul class="services-list">
+                <li class="services-container">
+                    <div class="services-card">
+                        <i class="fa-duotone fa-salad"></i>
+                        <h3>À La Carte Menu</h3>
+                        <!-- <br><div id="hailine">Menu by Dishes</div> -->
+                        <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i></div>
+                    </div>
+                    <div class="services-model flex-center">
+                        <div class="services-model-body">
+                            <i class="fas fa-times model-close-btn"></i>
+                            <h3>À La Carte Menu</h3>
+                            <h4>xxx</h4>
+                            <p>The à la carte menu is one of the 7 most popular types of restaurant menus today. A la carte is the opposite of a Table d'hôte menu. Meals and drinks are listed at separate prices. Diners do not need to choose a pre-planned meal, but can choose from the sporadic à la carte dishes to order.</p>
+                            <h4>xxx</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="services-container">
+                    <div class="services-card">
+                        <i class="fa-duotone fa-plate-utensils"></i>
+                        <h3>Table D'hôte Menu</h3>
+                        <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i></div>
+                    </div>
+                    <div class="services-model flex-center">
+                        <div class="services-model-body">
+                            <i class="fas fa-times model-close-btn"></i>
+                            <h3>Table D'hôte Menu</h3>
+                            <h4>xxx</h4>
+                            <p>This is a package menu for a meal with a fixed price with full starters, mains, desserts but limited choices. This menu is also called prix fixe (fixed price), meaning the price does not change.</p>
+                            <h4>xxx</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="services-container">
+                    <div class="services-card">
+                        <i class="fa-duotone fa-pot-food"></i>
+                        <h3>Du jour Menu</h3>
+                        <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i></div>
+                    </div>
+                    <div class="services-model flex-center">
+                        <div class="services-model-body">
+                            <i class="fas fa-times model-close-btn"></i>
+                            <h3>Du jour Menu</h3>
+                            <h4>xxx</h4>
+                            <p>Du jour menu is a menu that can change daily. Each day there will be one or more specials, depending on the season.</p>
+                            <h4>xxx</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="services-container">
+                    <div class="services-card">
+                        <i class="fa-duotone fa-olive-branch"></i>
+                        <h3>Degustation Menu</h3>
+                        <div class="learn-more-btn">Learn More <i class="fas fa-long-arrow-alt-right"></i></div>
+                    </div>
+                    <div class="services-model flex-center">
+                        <div class="services-model-body">
+                            <i class="fas fa-times model-close-btn"></i>
+                            <h3>Degustation Menu</h3>
+                            <h4>xxx</h4>
+                            <p>This is not a menu to eat full, but mainly for the purpose of tasting and experiencing. The dishes in this menu are just enough, mainly for guests to enjoy and evaluate the taste and talent of the chef.</p>
+                            <h4>xxx</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                                <li><i class="fas fa-check-circle"></i>xxx</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="skills-description">
+                <h3>Special Services</h3>
+            </div>
+            <div class="skills-info">
+                <div class="experience-card">
+                    <div class="upper">
+                        <h3>Birthday Package</h3>
+                        <h5>1 Week Pre-order</h5>
+                        <span>Standard | Outdoor</span>
+                    </div>
+                    <div class="hr"></div>
+                    <h4><label>More Information</label></h4>
+                    <p>We will create a memorable memory for that special person on a special day for a special meal. Meals can be ordered for 2 to 5 people. In addition, we will decorate, order cakes and give a special gift from the restaurant</p>
+                </div>
+                <div class="experience-card">
+                    <div class="upper">
+                        <h3>Mother's Day Menu</h3>
+                        <h5>Always Available</h5>
+                        <span>Private | Indoor</span>
+                    </div>
+                    <div class="hr"></div>
+                    <h4><label>More Information</label></h4>
+                    <p>We provide an ingredient-led lunch and dinner menu. Menus are subject to change due to seasonality and produce availability. Special menus for dietary requirements are available upon request.</p>
+                </div>
+                <div class="experience-card">
+                    <div class="upper">
+                        <h3>11-Course Party</h3>
+                        <h5>5 Days Pre-order</h5>
+                        <span>Private | Outdoor</span>
+                    </div>
+                    <div class="hr"></div>
+                    <h4><label>More Information</label></h4>
+                    <p>Party for friends and family to sit back and enjoy. The meal will serve about 5 to 12 people. Our 11-course meal is seasonally themed, all of our dishes are suitable for the elderly and children.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio -->
+
+<section class="portfolio section" id="portfolio">
+    <div class="container flex-center">
+        <h1 class="section-title-01">Space</h1>
+        <h2 class="section-title-02">Space</h2>
+        <div class="content">
+            <div class="portfolio-list">
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay"></div>
+                        <div class="info">
+                            <h3>Main Room</h3>
+                            <span>First Floor</span>
+                        </div>
+                        <img src="IMG/Hall.jpg">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Main Room</h3>
+                            <img src="IMG/212.jpg" alt="">
+                            <p>ieddddddddddddddddddddddddddddddddddfjefj</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay"></div>
+                        <div class="info">
+                            <h3>Private Room</h3>
+                            <span>First Floor</span>
+                        </div>
+                        <img src="IMG/chair.jpg">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Private Room</h3>
+                            <img src="IMG/W_Melbourne_Curious_3-julia-cincotta.jpg" alt="">
+                            <p>ieddddddddddddddddddddddddddddddddddfjefj</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay"></div>
+                        <div class="info">
+                            <h3>Mini Bar</h3>
+                            <span>First Floor</span>
+                        </div>
+                        <img src="IMG/bar.jpg">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Mini Bar</h3>
+                            <img src="IMG/IRJ_9728-640x512.jpg" alt="">
+                            <p>We offer a wide selection of drinks and cocktails to satisfy all tastes, from classic to modern twists. Our bartenders are skilled and knowledgeable, and are always happy to create a personalized drink just for you. We also have a variety of bar snacks and small plates to complement your drink, such as charcuterie boards, artisanal cheeses, and gourmet sliders. Come enjoy a relaxing evening with friends or partners and let us take care of the rest.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay"></div>
+                        <div class="info">
+                            <h3>Res Room</h3>
+                            <span>Secend Floor</span>
+                        </div>
+                        <img src="IMG/res_room.jpg">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Res Room</h3>
+                            <img src="IMG/ef.jpg" alt="">
+                            <p>ieddddddddddddddddddddddddddddddddddfjefj</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay"></div>
+                        <div class="info">
+                            <h3>Dining Room</h3>
+                            <span>Second Floor</span>
+                        </div>
+                        <img src="IMG/2nd.jpg">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Dining Room</h3>
+                            <img src="IMG/2ndd.jpg" alt="">
+                            <p>ieddddddddddddddddddddddddddddddddddfjefj</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay"></div>
+                        <div class="info">
+                            <h3>Our Building</h3>
+                            <span>Overview</span>
+                        </div>
+                        <img src="IMG/maine.jpg">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Our Building</h3>
+                            <img src="IMG/outside.jpg" alt="">
+                            <p>ieddddddddddddddddddddddddddddddddddfjefj</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- get in touch -->
+    <div class="get-in-touch sub-section">
+        <div class="container">
+            <div class="content flex-center">
+                <div class="contact-card flex-center">
+                    <div class="title">
+                        <h4>Let's Talk</h4>
+                        <h3>About Your</h3>
+                        <h2>Next Meal</h2>
+                    </div>
+                    <div class="contact-btn">
+                        <a href="" class="btn">Reserve a table <i class="fas fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our client -->
+    <div class="our-client sub-section">
+        <div class="container flex-center">
+            <h1 class="section-title-01">Featured</h1>
+            <h2 class="section-title-02">Featured</h2>
+            <div class="content">
+                <div class="swiper client-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide flex-center">
+                        <div class="client-img">
+                            <img src="IMG/cocktail.jpg" alt="">
+                        </div>
+                        <div class="client-details">
+                            <p>We have chosen to celebrate what we believe are just some of the defining cultural pillars of Melbourne, Coffee, Fashion & Art. We are inspired by the colours, styles, attitudes and personas of each and hopefully through our drinks list, we can give you a taste of Melbourne. </p>
+                            <h3>Cloud Cocktails</h3>
+                            <span>Curios Favourites</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide flex-center">
+                        <div class="client-img">
+                            <img src="IMG/bites.jpg" alt="">
+                        </div>
+                        <div class="client-details">
+                            <p>Leaning into the sense of discovery that is evoked by the design of Curious, a curated a menu of small plates and sharing bites that play on unexpected combinations, using flavours not singular in origin to take guests on a culinary adventure to be paired with bold curated cocktails and an extensive wine and spirits list.</p>
+                            <h3>Small Bites & Plates</h3>
+                            <span>Cold Bites</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide flex-center">
+                        <div class="client-img">
+                            <img src="IMG/music.jpg" alt="">
+                        </div>
+                        <div class="client-details">
+                            <p>Book a table from 7pm on Wednesdays and from 8pm Thursday-Saturday, as some of Melbourne's best DJ's take to the decks. </p>
+                            <h3>Sounds Of Curious</h3>
+                            <span>Entertainment</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide flex-center">
+                        <div class="client-img">
+                            <img src="IMG/squid.jpg" alt="">
+                        </div>
+                        <div class="client-details">
+                            <p>Our skilled sushi chefs use only the freshest ingredients to prepare traditional and creative rolls, sashimi, and nigiri. Complementing the sushi, our expert mixologists craft premium vodka cocktails using top-shelf spirits and fresh ingredients. Come join us for a unique culinary experience in a professional atmosphere.</p>
+                            <h3>Votails</h3>
+                            <span>Cold Bites</span>
+                        </div>
+                      </div>
+                      <div class="swiper-slide flex-center">
+                        <div class="client-img">
+                            <img src="IMG/Steak.jpg" alt="">
+                        </div>
+                        <div class="client-details">
+                            <p>This recipe has been passed down through generations and is a true delicacy. Our chefs start with the finest cuts of steak, which are seasoned and seared to perfection. The dish is then finished with tender bamboo shoots, which add a unique texture and flavor. The combination of savory steak and fresh, crunchy bamboo shoots creates a truly unforgettable dining experience. </p>
+                            <h3>Heirloom Steak</h3>
+                            <span>Exclusive Biter</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact -->
+
+<section class="contact section" id="contact">
+    <div class="container flex-center">
+        <h1 class="section-title-01">Contact Us</h1>
+        <h2 class="section-title-02">Contact Us</h2>
+        <div class="content">
+            <div class="contact-left">
+                <h2>Let's make a reservation with us</h2>
+                <ul class="contact-list">
+                    <li>
+                        <h3 class="item-title"><i class="fas fa-phone"></i> Phone</h3>
+                        <span>+84 930-041-975</span>
+                    </li>
+                    <li>
+                        <h3 class="item-title"><i class="fas fa-envelope"></i> Email Address</h3>
+                        <span><a href="mailto:anhnd@vnuis.edu.vn">anhnd@vnuis.edu.vn</a></span>
+                    </li>
+                    <li>
+                        <h3 class="item-title"><i class="fas fa-map-marker-alt"></i> Headquarters Address</h3>
+                        <span>Xa Thach Hoa, Huyen Thach That, Ha Noi</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-right">
+                <p>We always welcome everyone to come taste & enjoy <br><span>at our restaurant</span></p>
+                <form action="" class="contact-form">
+                    <div class="dongdau">
+                        <input type="text" name="" id="" placeholder="Name">
+                    </div>
+                    <div class="dong2">
+                        <input type="email" name="" id="" placeholder="Email">
+                        <input type="number" placeholder="Phone">
+                    </div>
+                    <div class="dong3">
+                        <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+                    </div>
+                    <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
             </div>
         </div>
     </div>
 </section>
 
 
+<!-- footer -->
+<footer>
+    <div class="footer-container">
+        <div class="about group">
+            <h2>Itisvnu</h2>
+            <p>International Restaurant Chain</p>
+            <a href="#about">About Us</a>
+        </div>
+        <div class="hr"></div>
+        <div class="info group">
+            <h3>More</h3>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Space</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hr">
+            <div class="follow group">
+                <h3>Follow</h3>
+            <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright group">
+        <p>Co Khi Trai Nganh IT®.  All rights reserved.</p>
+    </div>
+</footer>
 
-
+<script src="swiperbundle.min.js"></script>
 <script src="cuoikyjs.js"></script>
 </body>
 </html>
